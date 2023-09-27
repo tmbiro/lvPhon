@@ -4,9 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # Ignore datasets
-Resources/all_data.csv
 *.csv
-Resources/*.csv
 
 # User-specific files
 *.rsuser

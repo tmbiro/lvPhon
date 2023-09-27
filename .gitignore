@@ -3,8 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# Ignore datasets
+# Ignore certain files
 *.csv
+*.png
 
 # User-specific files
 *.rsuser
