@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # Ignore datasets
+all_data-9p.csv
 *.csv
 !Resources/*.csv
 
