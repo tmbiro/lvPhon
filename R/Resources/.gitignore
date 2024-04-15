@@ -5,6 +5,8 @@
 
 # Ignore datasets
 *.csv
+*.txt
+*.xlsx
 
 # User-specific files
 *.rsuser
