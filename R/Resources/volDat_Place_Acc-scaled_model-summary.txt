@@ -1,0 +1,72 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: value ~ Gyrus * Hemisphere + Place_Acc + (1 | PID)
+   Data: volDat
+
+REML criterion at convergence: 6361967
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.9878 -0.6144 -0.0671  0.5081  5.8455 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ PID      (Intercept)  37089   192.6   
+ Residual             339617   582.8   
+Number of obs: 408529, groups:  PID, 12
+
+Fixed effects:
+                                                          Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)                                              1.309e+02  5.579e+01  1.114e+01   2.347  0.03842 *  
+GyrusAmygdala                                            6.041e+02  1.092e+01  4.085e+05  55.318  < 2e-16 ***
+GyrusBasal Ganglia                                       3.802e+01  1.200e+01  4.085e+05   3.168  0.00154 ** 
+GyrusCingulate Gyrus                                     1.221e+03  7.012e+00  4.085e+05 174.081  < 2e-16 ***
+GyrusFusiform Gyrus                                      2.900e+03  9.303e+00  4.085e+05 311.692  < 2e-16 ***
+GyrusHippocampus                                         2.219e+03  1.092e+01  4.085e+05 203.209  < 2e-16 ***
+GyrusInferior Frontal Gyrus                              1.177e+03  7.338e+00  4.085e+05 160.455  < 2e-16 ***
+GyrusInferior Parietal Lobule                            3.279e+03  7.338e+00  4.085e+05 446.841  < 2e-16 ***
+GyrusInferior Temporal Gyrus                             9.819e+02  7.012e+00  4.085e+05 140.028  < 2e-16 ***
+GyrusInsular Gyrus                                       8.695e+02  7.338e+00  4.085e+05 118.496  < 2e-16 ***
+Gyruslateral Occipital Cortex                            2.690e+03  7.338e+00  4.085e+05 366.595  < 2e-16 ***
+GyrusMedioVentral Occipital Cortex                       2.592e+03  7.771e+00  4.085e+05 333.575  < 2e-16 ***
+GyrusMiddle Frontal Gyrus                                2.447e+03  7.012e+00  4.085e+05 348.978  < 2e-16 ***
+GyrusMiddle Temporal Gyrus                               2.623e+03  8.378e+00  4.085e+05 313.033  < 2e-16 ***
+GyrusOrbital Gyrus                                       2.347e+03  7.338e+00  4.085e+05 319.855  < 2e-16 ***
+GyrusParacentral Lobule                                  1.576e+03  1.092e+01  4.085e+05 144.353  < 2e-16 ***
+GyrusParahippocampal Gyrus                               4.817e+02  7.338e+00  4.085e+05  65.651  < 2e-16 ***
+GyrusPostcentral Gyrus                                   2.196e+03  8.378e+00  4.085e+05 262.065  < 2e-16 ***
+Gyrusposterior Superior Temporal Sulcus                  9.333e+02  1.092e+01  4.085e+05  85.468  < 2e-16 ***
+GyrusPrecentral Gyrus                                    1.869e+03  7.338e+00  4.085e+05 254.691  < 2e-16 ***
+GyrusPrecuneus                                           2.212e+03  8.378e+00  4.085e+05 263.996  < 2e-16 ***
+GyrusSuperior Frontal Gyrus                              2.184e+03  7.012e+00  4.085e+05 311.390  < 2e-16 ***
+GyrusSuperior Parietal Lobule                            1.071e+03  7.771e+00  4.085e+05 137.887  < 2e-16 ***
+GyrusSuperior Temporal Gyrus                             1.767e+03  7.338e+00  4.085e+05 240.809  < 2e-16 ***
+GyrusThalamus                                           -9.656e+01  1.084e+01  4.085e+05  -8.911  < 2e-16 ***
+HemisphereLeft                                           1.450e+01  1.394e+01  4.085e+05   1.040  0.29818    
+Place_Acc                                                5.585e-03  9.435e-01  4.085e+05   0.006  0.99528    
+GyrusAmygdala:HemisphereLeft                            -2.858e+02  1.976e+01  4.085e+05 -14.462  < 2e-16 ***
+GyrusBasal Ganglia:HemisphereLeft                       -1.297e+02  1.951e+01  4.085e+05  -6.646 3.01e-11 ***
+GyrusCingulate Gyrus:HemisphereLeft                      2.918e+02  1.583e+01  4.085e+05  18.441  < 2e-16 ***
+GyrusFusiform Gyrus:HemisphereLeft                      -3.056e+02  1.803e+01  4.085e+05 -16.948  < 2e-16 ***
+GyrusHippocampus:HemisphereLeft                         -1.062e+00  1.976e+01  4.085e+05  -0.054  0.95713    
+GyrusInferior Frontal Gyrus:HemisphereLeft              -1.120e+02  1.612e+01  4.085e+05  -6.947 3.73e-12 ***
+GyrusInferior Parietal Lobule:HemisphereLeft            -4.852e+02  1.612e+01  4.085e+05 -30.101  < 2e-16 ***
+GyrusInferior Temporal Gyrus:HemisphereLeft              1.485e+02  1.583e+01  4.085e+05   9.385  < 2e-16 ***
+GyrusInsular Gyrus:HemisphereLeft                        3.313e+01  1.612e+01  4.085e+05   2.055  0.03986 *  
+Gyruslateral Occipital Cortex:HemisphereLeft            -2.193e+02  1.612e+01  4.085e+05 -13.604  < 2e-16 ***
+GyrusMedioVentral Occipital Cortex:HemisphereLeft       -1.635e+02  1.652e+01  4.085e+05  -9.901  < 2e-16 ***
+GyrusMiddle Frontal Gyrus:HemisphereLeft                 6.929e+00  1.583e+01  4.085e+05   0.438  0.66152    
+GyrusMiddle Temporal Gyrus:HemisphereLeft               -1.036e+03  1.710e+01  4.085e+05 -60.570  < 2e-16 ***
+GyrusOrbital Gyrus:HemisphereLeft                       -3.486e+02  1.612e+01  4.085e+05 -21.630  < 2e-16 ***
+GyrusParacentral Lobule:HemisphereLeft                  -5.151e+02  1.976e+01  4.085e+05 -26.066  < 2e-16 ***
+GyrusParahippocampal Gyrus:HemisphereLeft               -4.300e+01  1.612e+01  4.085e+05  -2.668  0.00764 ** 
+GyrusPostcentral Gyrus:HemisphereLeft                   -9.646e+01  1.710e+01  4.085e+05  -5.640 1.70e-08 ***
+Gyrusposterior Superior Temporal Sulcus :HemisphereLeft -2.423e+02  1.976e+01  4.085e+05 -12.263  < 2e-16 ***
+GyrusPrecentral Gyrus:HemisphereLeft                     1.399e+01  1.612e+01  4.085e+05   0.868  0.38552    
+GyrusPrecuneus:HemisphereLeft                           -3.909e+02  1.710e+01  4.085e+05 -22.854  < 2e-16 ***
+GyrusSuperior Frontal Gyrus:HemisphereLeft              -8.880e+01  1.583e+01  4.085e+05  -5.611 2.01e-08 ***
+GyrusSuperior Parietal Lobule:HemisphereLeft             1.469e+02  1.652e+01  4.085e+05   8.893  < 2e-16 ***
+GyrusSuperior Temporal Gyrus:HemisphereLeft             -1.406e+02  1.612e+01  4.085e+05  -8.721  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fit warnings:
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient

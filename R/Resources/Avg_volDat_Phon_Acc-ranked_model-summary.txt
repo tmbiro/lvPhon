@@ -1,0 +1,253 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: value ~ Gyrus * Hemisphere + Phon_Acc_Group * Gyrus + Phon_Acc_Group *      Hemisphere + (1 | PID)
+   Data: volDat
+
+REML criterion at convergence: 41301.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.8861 -0.5558 -0.0645  0.4572  4.7604 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ PID      (Intercept)  18599   136.4   
+ Residual             367086   605.9   
+Number of obs: 2831, groups:  PID, 12
+
+Fixed effects:
+                                                               Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)                                                      79.552    253.938    40.626   0.313 0.755676    
+GyrusAmygdala                                                   745.022    383.142  2595.998   1.945 0.051942 .  
+GyrusBasal Ganglia                                              128.145    363.998  2596.005   0.352 0.724831    
+GyrusCingulate Gyrus                                           1703.590    275.289  2595.998   6.188 7.04e-10 ***
+GyrusFusiform Gyrus                                            3017.314    337.132  2595.998   8.950  < 2e-16 ***
+GyrusHippocampus                                               2525.822    383.142  2595.998   6.592 5.22e-11 ***
+GyrusInferior Frontal Gyrus                                    1552.752    283.757  2595.998   5.472 4.87e-08 ***
+GyrusInferior Parietal Lobule                                  4239.984    283.757  2595.998  14.942  < 2e-16 ***
+GyrusInferior Temporal Gyrus                                   1020.783    275.289  2595.998   3.708 0.000213 ***
+GyrusInsular Gyrus                                             1136.297    283.757  2595.998   4.004 6.39e-05 ***
+Gyruslateral Occipital Cortex                                  3613.542    283.757  2595.998  12.735  < 2e-16 ***
+GyrusMedioVentral Occipital Cortex                             2977.159    295.205  2595.998  10.085  < 2e-16 ***
+GyrusMiddle Frontal Gyrus                                      3109.655    275.289  2595.998  11.296  < 2e-16 ***
+GyrusMiddle Temporal Gyrus                                     3226.212    311.589  2595.998  10.354  < 2e-16 ***
+GyrusOrbital Gyrus                                             2794.448    283.757  2595.998   9.848  < 2e-16 ***
+GyrusParacentral Lobule                                        2376.030    383.142  2595.998   6.201 6.49e-10 ***
+GyrusParahippocampal Gyrus                                      451.024    283.757  2595.998   1.589 0.112075    
+GyrusPostcentral Gyrus                                         2755.417    311.589  2595.998   8.843  < 2e-16 ***
+Gyrusposterior Superior Temporal Sulcus                        1345.406    383.142  2595.998   3.512 0.000453 ***
+GyrusPrecentral Gyrus                                          2744.742    283.757  2595.998   9.673  < 2e-16 ***
+GyrusPrecuneus                                                 3233.209    311.589  2595.998  10.377  < 2e-16 ***
+GyrusSuperior Frontal Gyrus                                    2627.875    275.289  2595.998   9.546  < 2e-16 ***
+GyrusSuperior Parietal Lobule                                  1329.496    295.205  2595.998   4.504 6.98e-06 ***
+GyrusSuperior Temporal Gyrus                                   2201.751    283.757  2595.998   7.759 1.22e-14 ***
+GyrusThalamus                                                    -9.369    429.855  2596.000  -0.022 0.982613    
+HemisphereLeft                                                  -74.043    192.840  2596.014  -0.384 0.701041    
+Phon_Acc_Group91-95%                                             31.768    305.134    37.671   0.104 0.917633    
+Phon_Acc_Group86-90%                                             24.759    287.959    37.815   0.086 0.931934    
+Phon_Acc_Group81-85%                                            118.649    351.953    37.509   0.337 0.737909    
+Phon_Acc_Group76-80%                                             42.714    346.110    35.101   0.123 0.902486    
+Phon_Acc_Group71-75%                                             -9.306    346.110    35.101  -0.027 0.978703    
+Phon_Acc_Group66-70%                                              5.645    346.110    35.101   0.016 0.987080    
+Phon_Acc_Group61-65%                                             24.603    308.837    39.514   0.080 0.936906    
+GyrusAmygdala:HemisphereLeft                                   -292.034    247.895  2596.008  -1.178 0.238883    
+GyrusBasal Ganglia:HemisphereLeft                              -144.801    248.540  2596.047  -0.583 0.560208    
+GyrusCingulate Gyrus:HemisphereLeft                             268.325    199.002  2596.014   1.348 0.177661    
+GyrusFusiform Gyrus:HemisphereLeft                             -237.492    226.396  2596.010  -1.049 0.294271    
+GyrusHippocampus:HemisphereLeft                                 -10.306    247.895  2596.008  -0.042 0.966841    
+GyrusInferior Frontal Gyrus:HemisphereLeft                     -114.128    202.629  2596.013  -0.563 0.573321    
+GyrusInferior Parietal Lobule:HemisphereLeft                   -480.635    202.629  2596.013  -2.372 0.017765 *  
+GyrusInferior Temporal Gyrus:HemisphereLeft                     154.186    199.002  2596.014   0.775 0.438530    
+GyrusInsular Gyrus:HemisphereLeft                                36.542    202.629  2596.013   0.180 0.856901    
+Gyruslateral Occipital Cortex:HemisphereLeft                   -228.539    202.629  2596.013  -1.128 0.259478    
+GyrusMedioVentral Occipital Cortex:HemisphereLeft              -174.419    207.600  2596.013  -0.840 0.400890    
+GyrusMiddle Frontal Gyrus:HemisphereLeft                         65.275    199.002  2596.014   0.328 0.742930    
+GyrusMiddle Temporal Gyrus:HemisphereLeft                     -1086.605    214.841  2596.012  -5.058 4.54e-07 ***
+GyrusOrbital Gyrus:HemisphereLeft                              -388.923    202.629  2596.013  -1.919 0.055045 .  
+GyrusParacentral Lobule:HemisphereLeft                         -537.602    247.895  2596.008  -2.169 0.030199 *  
+GyrusParahippocampal Gyrus:HemisphereLeft                       -33.851    202.629  2596.013  -0.167 0.867336    
+GyrusPostcentral Gyrus:HemisphereLeft                           -93.048    214.841  2596.012  -0.433 0.664979    
+Gyrusposterior Superior Temporal Sulcus :HemisphereLeft        -234.562    247.895  2596.008  -0.946 0.344127    
+GyrusPrecentral Gyrus:HemisphereLeft                              9.754    202.629  2596.013   0.048 0.961610    
+GyrusPrecuneus:HemisphereLeft                                  -377.144    214.841  2596.012  -1.755 0.079300 .  
+GyrusSuperior Frontal Gyrus:HemisphereLeft                      -67.723    199.002  2596.014  -0.340 0.733647    
+GyrusSuperior Parietal Lobule:HemisphereLeft                    146.699    207.600  2596.013   0.707 0.479853    
+GyrusSuperior Temporal Gyrus:HemisphereLeft                    -145.353    202.629  2596.013  -0.717 0.473230    
+GyrusAmygdala:Phon_Acc_Group91-95%                             -146.490    453.112  2596.003  -0.323 0.746496    
+GyrusBasal Ganglia:Phon_Acc_Group91-95%                         -52.310    442.174  2596.010  -0.118 0.905837    
+GyrusCingulate Gyrus:Phon_Acc_Group91-95%                      -372.895    327.084  2596.007  -1.140 0.254368    
+GyrusFusiform Gyrus:Phon_Acc_Group91-95%                        -43.557    399.281  2596.004  -0.109 0.913141    
+GyrusHippocampus:Phon_Acc_Group91-95%                          -317.754    453.112  2596.003  -0.701 0.483197    
+GyrusInferior Frontal Gyrus:Phon_Acc_Group91-95%               -206.608    336.956  2596.006  -0.613 0.539825    
+GyrusInferior Parietal Lobule:Phon_Acc_Group91-95%             -702.565    336.956  2596.006  -2.085 0.037164 *  
+GyrusInferior Temporal Gyrus:Phon_Acc_Group91-95%               -39.729    327.084  2596.007  -0.121 0.903333    
+GyrusInsular Gyrus:Phon_Acc_Group91-95%                        -142.266    336.956  2596.006  -0.422 0.672906    
+Gyruslateral Occipital Cortex:Phon_Acc_Group91-95%            -1027.898    336.956  2596.006  -3.051 0.002307 ** 
+GyrusMedioVentral Occipital Cortex:Phon_Acc_Group91-95%        -421.575    350.309  2596.006  -1.203 0.228917    
+GyrusMiddle Frontal Gyrus:Phon_Acc_Group91-95%                 -447.756    327.084  2596.007  -1.369 0.171139    
+GyrusMiddle Temporal Gyrus:Phon_Acc_Group91-95%                -509.850    369.435  2596.005  -1.380 0.167680    
+GyrusOrbital Gyrus:Phon_Acc_Group91-95%                        -194.554    336.956  2596.006  -0.577 0.563727    
+GyrusParacentral Lobule:Phon_Acc_Group91-95%                   -669.306    453.112  2596.003  -1.477 0.139762    
+GyrusParahippocampal Gyrus:Phon_Acc_Group91-95%                 -20.773    336.956  2596.006  -0.062 0.950847    
+GyrusPostcentral Gyrus:Phon_Acc_Group91-95%                    -692.314    369.435  2596.005  -1.874 0.061045 .  
+Gyrusposterior Superior Temporal Sulcus :Phon_Acc_Group91-95%  -383.482    453.112  2596.003  -0.846 0.397447    
+GyrusPrecentral Gyrus:Phon_Acc_Group91-95%                     -784.677    336.956  2596.006  -2.329 0.019950 *  
+GyrusPrecuneus:Phon_Acc_Group91-95%                            -925.402    369.435  2596.005  -2.505 0.012309 *  
+GyrusSuperior Frontal Gyrus:Phon_Acc_Group91-95%               -229.005    327.084  2596.007  -0.700 0.483903    
+GyrusSuperior Parietal Lobule:Phon_Acc_Group91-95%             -197.780    350.309  2596.006  -0.565 0.572404    
+GyrusSuperior Temporal Gyrus:Phon_Acc_Group91-95%              -149.669    336.956  2596.006  -0.444 0.656950    
+GyrusThalamus:Phon_Acc_Group91-95%                             -114.308    487.904  2596.002  -0.234 0.814783    
+GyrusAmygdala:Phon_Acc_Group86-90%                             -167.107    427.381  2595.998  -0.391 0.695828    
+GyrusBasal Ganglia:Phon_Acc_Group86-90%                        -122.174    404.300  2596.056  -0.302 0.762533    
+GyrusCingulate Gyrus:Phon_Acc_Group86-90%                      -490.977    308.630  2595.998  -1.591 0.111771    
+GyrusFusiform Gyrus:Phon_Acc_Group86-90%                        112.318    376.652  2595.998   0.298 0.765575    
+GyrusHippocampus:Phon_Acc_Group86-90%                          -259.181    427.381  2595.998  -0.606 0.544275    
+GyrusInferior Frontal Gyrus:Phon_Acc_Group86-90%               -341.940    317.930  2595.998  -1.076 0.282242    
+GyrusInferior Parietal Lobule:Phon_Acc_Group86-90%             -861.905    317.930  2595.998  -2.711 0.006752 ** 
+GyrusInferior Temporal Gyrus:Phon_Acc_Group86-90%               182.754    308.630  2595.998   0.592 0.553805    
+GyrusInsular Gyrus:Phon_Acc_Group86-90%                        -292.731    317.930  2595.998  -0.921 0.357271    
+Gyruslateral Occipital Cortex:Phon_Acc_Group86-90%             -713.069    317.930  2595.998  -2.243 0.024991 *  
+GyrusMedioVentral Occipital Cortex:Phon_Acc_Group86-90%        -239.000    330.510  2595.998  -0.723 0.469669    
+GyrusMiddle Frontal Gyrus:Phon_Acc_Group86-90%                 -528.743    308.630  2595.998  -1.713 0.086797 .  
+GyrusMiddle Temporal Gyrus:Phon_Acc_Group86-90%                -327.448    348.530  2595.998  -0.940 0.347556    
+GyrusOrbital Gyrus:Phon_Acc_Group86-90%                        -529.659    317.930  2595.998  -1.666 0.095842 .  
+GyrusParacentral Lobule:Phon_Acc_Group86-90%                   -811.288    427.381  2595.998  -1.898 0.057770 .  
+GyrusParahippocampal Gyrus:Phon_Acc_Group86-90%                  52.385    317.930  2595.998   0.165 0.869138    
+GyrusPostcentral Gyrus:Phon_Acc_Group86-90%                    -548.184    348.530  2595.998  -1.573 0.115876    
+Gyrusposterior Superior Temporal Sulcus :Phon_Acc_Group86-90%  -352.920    427.381  2595.998  -0.826 0.409008    
+GyrusPrecentral Gyrus:Phon_Acc_Group86-90%                     -803.636    317.930  2595.998  -2.528 0.011540 *  
+GyrusPrecuneus:Phon_Acc_Group86-90%                           -1091.843    348.530  2595.998  -3.133 0.001751 ** 
+GyrusSuperior Frontal Gyrus:Phon_Acc_Group86-90%               -525.842    308.630  2595.998  -1.704 0.088540 .  
+GyrusSuperior Parietal Lobule:Phon_Acc_Group86-90%             -382.752    330.510  2595.998  -1.158 0.246944    
+GyrusSuperior Temporal Gyrus:Phon_Acc_Group86-90%              -440.543    317.930  2595.998  -1.386 0.165970    
+GyrusThalamus:Phon_Acc_Group86-90%                             -113.065    461.969  2596.008  -0.245 0.806672    
+GyrusAmygdala:Phon_Acc_Group81-85%                             -363.668    522.952  2595.998  -0.695 0.486858    
+GyrusBasal Ganglia:Phon_Acc_Group81-85%                        -300.636    536.529  2595.998  -0.560 0.575300    
+GyrusCingulate Gyrus:Phon_Acc_Group81-85%                      -675.769    377.329  2595.998  -1.791 0.073421 .  
+GyrusFusiform Gyrus:Phon_Acc_Group81-85%                       -299.583    460.758  2595.998  -0.650 0.515624    
+GyrusHippocampus:Phon_Acc_Group81-85%                          -664.596    522.952  2595.998  -1.271 0.203894    
+GyrusInferior Frontal Gyrus:Phon_Acc_Group81-85%               -613.823    388.738  2595.998  -1.579 0.114454    
+GyrusInferior Parietal Lobule:Phon_Acc_Group81-85%            -1315.775    388.738  2595.998  -3.385 0.000723 ***
+GyrusInferior Temporal Gyrus:Phon_Acc_Group81-85%              -123.467    377.329  2595.998  -0.327 0.743533    
+GyrusInsular Gyrus:Phon_Acc_Group81-85%                        -516.543    388.738  2595.998  -1.329 0.184041    
+Gyruslateral Occipital Cortex:Phon_Acc_Group81-85%            -1531.412    388.738  2595.998  -3.939 8.38e-05 ***
+GyrusMedioVentral Occipital Cortex:Phon_Acc_Group81-85%        -816.993    404.170  2595.998  -2.021 0.043340 *  
+GyrusMiddle Frontal Gyrus:Phon_Acc_Group81-85%                -1178.809    377.329  2595.998  -3.124 0.001803 ** 
+GyrusMiddle Temporal Gyrus:Phon_Acc_Group81-85%               -1023.380    426.272  2595.998  -2.401 0.016431 *  
+GyrusOrbital Gyrus:Phon_Acc_Group81-85%                        -716.095    388.738  2595.998  -1.842 0.065574 .  
+GyrusParacentral Lobule:Phon_Acc_Group81-85%                   -834.836    522.952  2595.998  -1.596 0.110523    
+GyrusParahippocampal Gyrus:Phon_Acc_Group81-85%                -195.007    388.738  2595.998  -0.502 0.615962    
+GyrusPostcentral Gyrus:Phon_Acc_Group81-85%                    -359.124    426.272  2595.998  -0.842 0.399599    
+Gyrusposterior Superior Temporal Sulcus :Phon_Acc_Group81-85%  -749.716    522.952  2595.998  -1.434 0.151800    
+GyrusPrecentral Gyrus:Phon_Acc_Group81-85%                     -960.703    388.738  2595.998  -2.471 0.013525 *  
+GyrusPrecuneus:Phon_Acc_Group81-85%                           -1385.492    426.272  2595.998  -3.250 0.001168 ** 
+GyrusSuperior Frontal Gyrus:Phon_Acc_Group81-85%               -552.011    377.329  2595.998  -1.463 0.143604    
+GyrusSuperior Parietal Lobule:Phon_Acc_Group81-85%             -568.008    404.170  2595.998  -1.405 0.160032    
+GyrusSuperior Temporal Gyrus:Phon_Acc_Group81-85%              -788.074    388.738  2595.998  -2.027 0.042738 *  
+GyrusThalamus:Phon_Acc_Group81-85%                             -270.494    553.371  2595.998  -0.489 0.625016    
+GyrusAmygdala:Phon_Acc_Group76-80%                             -258.378    519.019  2595.998  -0.498 0.618652    
+GyrusBasal Ganglia:Phon_Acc_Group76-80%                        -134.958    471.737  2595.998  -0.286 0.774834    
+GyrusCingulate Gyrus:Phon_Acc_Group76-80%                      -817.354    371.858  2595.998  -2.198 0.028035 *  
+GyrusFusiform Gyrus:Phon_Acc_Group76-80%                       -620.149    456.289  2595.998  -1.359 0.174228    
+GyrusHippocampus:Phon_Acc_Group76-80%                          -739.786    519.019  2595.998  -1.425 0.154175    
+GyrusInferior Frontal Gyrus:Phon_Acc_Group76-80%               -869.664    383.430  2595.998  -2.268 0.023404 *  
+GyrusInferior Parietal Lobule:Phon_Acc_Group76-80%            -1637.664    383.430  2595.998  -4.271 2.02e-05 ***
+GyrusInferior Temporal Gyrus:Phon_Acc_Group76-80%              -227.092    371.858  2595.998  -0.611 0.541456    
+GyrusInsular Gyrus:Phon_Acc_Group76-80%                        -496.970    383.430  2595.998  -1.296 0.195050    
+Gyruslateral Occipital Cortex:Phon_Acc_Group76-80%            -1215.520    383.430  2595.998  -3.170 0.001542 ** 
+GyrusMedioVentral Occipital Cortex:Phon_Acc_Group76-80%        -485.527    399.067  2595.998  -1.217 0.223846    
+GyrusMiddle Frontal Gyrus:Phon_Acc_Group76-80%                -1415.224    371.858  2595.998  -3.806 0.000145 ***
+GyrusMiddle Temporal Gyrus:Phon_Acc_Group76-80%               -1063.434    421.437  2595.998  -2.523 0.011683 *  
+GyrusOrbital Gyrus:Phon_Acc_Group76-80%                        -936.309    383.430  2595.998  -2.442 0.014675 *  
+GyrusParacentral Lobule:Phon_Acc_Group76-80%                  -1223.882    519.019  2595.998  -2.358 0.018444 *  
+GyrusParahippocampal Gyrus:Phon_Acc_Group76-80%                -117.877    383.430  2595.998  -0.307 0.758542    
+GyrusPostcentral Gyrus:Phon_Acc_Group76-80%                   -1305.674    421.437  2595.998  -3.098 0.001968 ** 
+Gyrusposterior Superior Temporal Sulcus :Phon_Acc_Group76-80%  -392.778    519.019  2595.998  -0.757 0.449256    
+GyrusPrecentral Gyrus:Phon_Acc_Group76-80%                    -1518.624    383.430  2595.998  -3.961 7.68e-05 ***
+GyrusPrecuneus:Phon_Acc_Group76-80%                           -1517.067    421.437  2595.998  -3.600 0.000324 ***
+GyrusSuperior Frontal Gyrus:Phon_Acc_Group76-80%               -991.727    371.858  2595.998  -2.667 0.007702 ** 
+GyrusSuperior Parietal Lobule:Phon_Acc_Group76-80%             -662.884    399.067  2595.998  -1.661 0.096818 .  
+GyrusSuperior Temporal Gyrus:Phon_Acc_Group76-80%              -791.925    383.430  2595.998  -2.065 0.038987 *  
+GyrusThalamus:Phon_Acc_Group76-80%                             -108.244    549.654  2595.998  -0.197 0.843897    
+GyrusAmygdala:Phon_Acc_Group71-75%                             -152.719    519.023  2595.998  -0.294 0.768595    
+GyrusBasal Ganglia:Phon_Acc_Group71-75%                        -101.566    483.843  2595.998  -0.210 0.833751    
+GyrusCingulate Gyrus:Phon_Acc_Group71-75%                      -535.841    371.863  2595.998  -1.441 0.149715    
+GyrusFusiform Gyrus:Phon_Acc_Group71-75%                       -142.052    456.293  2595.998  -0.311 0.755584    
+GyrusHippocampus:Phon_Acc_Group71-75%                          -343.311    519.023  2595.998  -0.661 0.508378    
+GyrusInferior Frontal Gyrus:Phon_Acc_Group71-75%               -480.954    383.435  2595.998  -1.254 0.209835    
+GyrusInferior Parietal Lobule:Phon_Acc_Group71-75%             -816.783    383.435  2595.998  -2.130 0.033251 *  
+GyrusInferior Temporal Gyrus:Phon_Acc_Group71-75%               -74.273    371.863  2595.998  -0.200 0.841705    
+GyrusInsular Gyrus:Phon_Acc_Group71-75%                        -411.578    383.435  2595.998  -1.073 0.283193    
+Gyruslateral Occipital Cortex:Phon_Acc_Group71-75%             -884.239    383.435  2595.998  -2.306 0.021184 *  
+GyrusMedioVentral Occipital Cortex:Phon_Acc_Group71-75%        -678.134    399.072  2595.998  -1.699 0.089387 .  
+GyrusMiddle Frontal Gyrus:Phon_Acc_Group71-75%                 -853.062    371.863  2595.998  -2.294 0.021869 *  
+GyrusMiddle Temporal Gyrus:Phon_Acc_Group71-75%                -317.135    421.441  2595.998  -0.753 0.451818    
+GyrusOrbital Gyrus:Phon_Acc_Group71-75%                        -609.850    383.435  2595.998  -1.590 0.111846    
+GyrusParacentral Lobule:Phon_Acc_Group71-75%                   -966.799    519.023  2595.998  -1.863 0.062613 .  
+GyrusParahippocampal Gyrus:Phon_Acc_Group71-75%                 -11.023    383.435  2595.998  -0.029 0.977068    
+GyrusPostcentral Gyrus:Phon_Acc_Group71-75%                    -628.303    421.441  2595.998  -1.491 0.136124    
+Gyrusposterior Superior Temporal Sulcus :Phon_Acc_Group71-75%  -363.151    519.023  2595.998  -0.700 0.484188    
+GyrusPrecentral Gyrus:Phon_Acc_Group71-75%                    -1096.890    383.435  2595.998  -2.861 0.004261 ** 
+GyrusPrecuneus:Phon_Acc_Group71-75%                           -1003.087    421.441  2595.998  -2.380 0.017378 *  
+GyrusSuperior Frontal Gyrus:Phon_Acc_Group71-75%               -495.357    371.863  2595.998  -1.332 0.182946    
+GyrusSuperior Parietal Lobule:Phon_Acc_Group71-75%             -177.500    399.072  2595.998  -0.445 0.656515    
+GyrusSuperior Temporal Gyrus:Phon_Acc_Group71-75%              -407.183    383.435  2595.998  -1.062 0.288364    
+GyrusThalamus:Phon_Acc_Group71-75%                              -95.513    549.658  2595.998  -0.174 0.862061    
+GyrusAmygdala:Phon_Acc_Group66-70%                              105.803    519.036  2595.998   0.204 0.838490    
+GyrusBasal Ganglia:Phon_Acc_Group66-70%                         145.035    504.513  2595.999   0.287 0.773771    
+GyrusCingulate Gyrus:Phon_Acc_Group66-70%                      -382.883    371.881  2595.998  -1.030 0.303302    
+GyrusFusiform Gyrus:Phon_Acc_Group66-70%                        -44.938    456.308  2595.998  -0.098 0.921557    
+GyrusHippocampus:Phon_Acc_Group66-70%                          -228.021    519.036  2595.998  -0.439 0.660469    
+GyrusInferior Frontal Gyrus:Phon_Acc_Group66-70%               -290.144    383.452  2595.998  -0.757 0.449322    
+GyrusInferior Parietal Lobule:Phon_Acc_Group66-70%            -1015.093    383.452  2595.998  -2.647 0.008164 ** 
+GyrusInferior Temporal Gyrus:Phon_Acc_Group66-70%                82.855    371.881  2595.998   0.223 0.823710    
+GyrusInsular Gyrus:Phon_Acc_Group66-70%                        -176.053    383.452  2595.998  -0.459 0.646182    
+Gyruslateral Occipital Cortex:Phon_Acc_Group66-70%             -611.338    383.452  2595.998  -1.594 0.110991    
+GyrusMedioVentral Occipital Cortex:Phon_Acc_Group66-70%         286.104    399.089  2595.998   0.717 0.473505    
+GyrusMiddle Frontal Gyrus:Phon_Acc_Group66-70%                 -638.883    371.881  2595.998  -1.718 0.085920 .  
+GyrusMiddle Temporal Gyrus:Phon_Acc_Group66-70%                -387.765    421.457  2595.998  -0.920 0.357628    
+GyrusOrbital Gyrus:Phon_Acc_Group66-70%                        -365.877    383.452  2595.998  -0.954 0.340089    
+GyrusParacentral Lobule:Phon_Acc_Group66-70%                   -524.341    519.036  2595.998  -1.010 0.312483    
+GyrusParahippocampal Gyrus:Phon_Acc_Group66-70%                 192.801    383.452  2595.998   0.503 0.615146    
+GyrusPostcentral Gyrus:Phon_Acc_Group66-70%                    -345.461    421.457  2595.998  -0.820 0.412473    
+Gyrusposterior Superior Temporal Sulcus :Phon_Acc_Group66-70%  -376.117    519.036  2595.998  -0.725 0.468735    
+GyrusPrecentral Gyrus:Phon_Acc_Group66-70%                     -769.973    383.452  2595.998  -2.008 0.044747 *  
+GyrusPrecuneus:Phon_Acc_Group66-70%                            -990.965    421.457  2595.998  -2.351 0.018783 *  
+GyrusSuperior Frontal Gyrus:Phon_Acc_Group66-70%               -514.320    371.881  2595.998  -1.383 0.166777    
+GyrusSuperior Parietal Lobule:Phon_Acc_Group66-70%              309.502    399.089  2595.998   0.776 0.438102    
+GyrusSuperior Temporal Gyrus:Phon_Acc_Group66-70%              -283.658    383.452  2595.998  -0.740 0.459520    
+GyrusThalamus:Phon_Acc_Group66-70%                               79.425    549.671  2595.998   0.144 0.885120    
+GyrusAmygdala:Phon_Acc_Group61-65%                              -93.648    455.605  2596.004  -0.206 0.837160    
+GyrusBasal Ganglia:Phon_Acc_Group61-65%                         -54.434    421.854  2596.000  -0.129 0.897339    
+GyrusCingulate Gyrus:Phon_Acc_Group61-65%                      -436.707    330.528  2596.009  -1.321 0.186538    
+GyrusFusiform Gyrus:Phon_Acc_Group61-65%                       -262.352    402.107  2596.005  -0.652 0.514172    
+GyrusHippocampus:Phon_Acc_Group61-65%                          -189.456    455.605  2596.004  -0.416 0.677565    
+GyrusInferior Frontal Gyrus:Phon_Acc_Group61-65%               -326.310    340.300  2596.008  -0.959 0.337704    
+GyrusInferior Parietal Lobule:Phon_Acc_Group61-65%             -993.659    340.300  2596.008  -2.920 0.003531 ** 
+GyrusInferior Temporal Gyrus:Phon_Acc_Group61-65%              -111.751    330.528  2596.009  -0.338 0.735316    
+GyrusInsular Gyrus:Phon_Acc_Group61-65%                        -211.259    340.300  2596.008  -0.621 0.534784    
+Gyruslateral Occipital Cortex:Phon_Acc_Group61-65%            -1009.744    340.300  2596.008  -2.967 0.003033 ** 
+GyrusMedioVentral Occipital Cortex:Phon_Acc_Group61-65%        -420.330    353.527  2596.007  -1.189 0.234563    
+GyrusMiddle Frontal Gyrus:Phon_Acc_Group61-65%                 -643.445    330.528  2596.009  -1.947 0.051676 .  
+GyrusMiddle Temporal Gyrus:Phon_Acc_Group61-65%                -685.968    372.488  2596.006  -1.842 0.065650 .  
+GyrusOrbital Gyrus:Phon_Acc_Group61-65%                        -333.435    340.300  2596.008  -0.980 0.327263    
+GyrusParacentral Lobule:Phon_Acc_Group61-65%                   -864.784    455.605  2596.004  -1.898 0.057793 .  
+GyrusParahippocampal Gyrus:Phon_Acc_Group61-65%                 100.805    340.300  2596.008   0.296 0.767083    
+GyrusPostcentral Gyrus:Phon_Acc_Group61-65%                    -531.536    372.488  2596.006  -1.427 0.153703    
+Gyrusposterior Superior Temporal Sulcus :Phon_Acc_Group61-65%  -442.257    455.605  2596.004  -0.971 0.331787    
+GyrusPrecentral Gyrus:Phon_Acc_Group61-65%                     -872.550    340.300  2596.008  -2.564 0.010401 *  
+GyrusPrecuneus:Phon_Acc_Group61-65%                            -966.992    372.488  2596.006  -2.596 0.009484 ** 
+GyrusSuperior Frontal Gyrus:Phon_Acc_Group61-65%               -360.400    330.528  2596.009  -1.090 0.275648    
+GyrusSuperior Parietal Lobule:Phon_Acc_Group61-65%             -220.240    353.527  2596.007  -0.623 0.533352    
+GyrusSuperior Temporal Gyrus:Phon_Acc_Group61-65%              -468.304    340.300  2596.008  -1.376 0.168893    
+GyrusThalamus:Phon_Acc_Group61-65%                              -51.866    490.219  2596.003  -0.106 0.915748    
+HemisphereLeft:Phon_Acc_Group91-95%                             122.308     98.899  2595.999   1.237 0.216309    
+HemisphereLeft:Phon_Acc_Group86-90%                             158.315     93.170  2596.000   1.699 0.089398 .  
+HemisphereLeft:Phon_Acc_Group81-85%                             277.559    114.245  2595.998   2.429 0.015187 *  
+HemisphereLeft:Phon_Acc_Group76-80%                              87.522    113.898  2595.998   0.768 0.442305    
+HemisphereLeft:Phon_Acc_Group71-75%                             166.865    113.964  2595.998   1.464 0.143261    
+HemisphereLeft:Phon_Acc_Group66-70%                            -207.792    114.199  2595.998  -1.820 0.068942 .  
+HemisphereLeft:Phon_Acc_Group61-65%                              23.402     98.724  2595.999   0.237 0.812640    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fit warnings:
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient

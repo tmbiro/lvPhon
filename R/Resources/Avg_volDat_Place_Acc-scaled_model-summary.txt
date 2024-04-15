@@ -1,0 +1,72 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: value ~ Gyrus * Hemisphere + Place_Acc + (1 | PID)
+   Data: volDat
+
+REML criterion at convergence: 43785.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.8955 -0.6005 -0.0607  0.4951  5.6096 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ PID      (Intercept)  31240   176.7   
+ Residual             370767   608.9   
+Number of obs: 2831, groups:  PID, 12
+
+Fixed effects:
+                                                         Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)                                               112.785     76.715    46.114   1.470   0.1483    
+GyrusAmygdala                                             602.874    136.860  2771.014   4.405 1.10e-05 ***
+GyrusBasal Ganglia                                         47.993    154.584  2771.185   0.310   0.7562    
+GyrusCingulate Gyrus                                     1240.323     87.726  2771.031  14.139  < 2e-16 ***
+GyrusFusiform Gyrus                                      2897.580    116.538  2771.018  24.864  < 2e-16 ***
+GyrusHippocampus                                         2207.248    136.860  2771.014  16.128  < 2e-16 ***
+GyrusInferior Frontal Gyrus                              1185.964     91.823  2771.028  12.916  < 2e-16 ***
+GyrusInferior Parietal Lobule                            3338.426     91.823  2771.028  36.357  < 2e-16 ***
+GyrusInferior Temporal Gyrus                             1008.125     87.726  2771.031  11.492  < 2e-16 ***
+GyrusInsular Gyrus                                        866.163     91.823  2771.028   9.433  < 2e-16 ***
+Gyruslateral Occipital Cortex                            2737.523     91.823  2771.028  29.813  < 2e-16 ***
+GyrusMedioVentral Occipital Cortex                       2631.277     97.270  2771.025  27.051  < 2e-16 ***
+GyrusMiddle Frontal Gyrus                                2450.502     87.726  2771.031  27.934  < 2e-16 ***
+GyrusMiddle Temporal Gyrus                               2707.802    104.911  2771.022  25.811  < 2e-16 ***
+GyrusOrbital Gyrus                                       2350.423     91.823  2771.028  25.597  < 2e-16 ***
+GyrusParacentral Lobule                                  1617.104    136.860  2771.014  11.816  < 2e-16 ***
+GyrusParahippocampal Gyrus                                461.932     91.823  2771.028   5.031 5.20e-07 ***
+GyrusPostcentral Gyrus                                   2189.914    104.911  2771.022  20.874  < 2e-16 ***
+Gyrusposterior Superior Temporal Sulcus                   958.138    136.860  2771.014   7.001 3.18e-12 ***
+GyrusPrecentral Gyrus                                    1900.844     91.823  2771.028  20.701  < 2e-16 ***
+GyrusPrecuneus                                           2232.197    104.911  2771.022  21.277  < 2e-16 ***
+GyrusSuperior Frontal Gyrus                              2180.794     87.726  2771.031  24.859  < 2e-16 ***
+GyrusSuperior Parietal Lobule                            1067.962     97.270  2771.025  10.979  < 2e-16 ***
+GyrusSuperior Temporal Gyrus                             1794.782     91.823  2771.028  19.546  < 2e-16 ***
+GyrusThalamus                                             -94.185    136.871  2771.052  -0.688   0.4914    
+HemisphereLeft                                              8.184    175.791  2771.046   0.047   0.9629    
+Place_Acc                                                  81.502     52.277    10.003   1.559   0.1500    
+GyrusAmygdala:HemisphereLeft                             -283.384    248.596  2771.024  -1.140   0.2544    
+GyrusBasal Ganglia:HemisphereLeft                        -135.622    248.626  2771.093  -0.545   0.5855    
+GyrusCingulate Gyrus:HemisphereLeft                       276.975    199.325  2771.036   1.390   0.1648    
+GyrusFusiform Gyrus:HemisphereLeft                       -228.842    226.938  2771.029  -1.008   0.3134    
+GyrusHippocampus:HemisphereLeft                            -1.656    248.596  2771.024  -0.007   0.9947    
+GyrusInferior Frontal Gyrus:HemisphereLeft               -105.479    202.982  2771.035  -0.520   0.6034    
+GyrusInferior Parietal Lobule:HemisphereLeft             -471.985    202.982  2771.035  -2.325   0.0201 *  
+GyrusInferior Temporal Gyrus:HemisphereLeft               162.836    199.325  2771.036   0.817   0.4140    
+GyrusInsular Gyrus:HemisphereLeft                          45.192    202.982  2771.035   0.223   0.8238    
+Gyruslateral Occipital Cortex:HemisphereLeft             -219.889    202.982  2771.035  -1.083   0.2788    
+GyrusMedioVentral Occipital Cortex:HemisphereLeft        -165.769    207.994  2771.034  -0.797   0.4255    
+GyrusMiddle Frontal Gyrus:HemisphereLeft                   73.925    199.325  2771.036   0.371   0.7108    
+GyrusMiddle Temporal Gyrus:HemisphereLeft               -1077.955    215.293  2771.032  -5.007 5.88e-07 ***
+GyrusOrbital Gyrus:HemisphereLeft                        -380.273    202.982  2771.035  -1.873   0.0611 .  
+GyrusParacentral Lobule:HemisphereLeft                   -528.952    248.596  2771.024  -2.128   0.0334 *  
+GyrusParahippocampal Gyrus:HemisphereLeft                 -25.201    202.982  2771.035  -0.124   0.9012    
+GyrusPostcentral Gyrus:HemisphereLeft                     -84.398    215.293  2771.032  -0.392   0.6951    
+Gyrusposterior Superior Temporal Sulcus :HemisphereLeft  -225.912    248.596  2771.024  -0.909   0.3636    
+GyrusPrecentral Gyrus:HemisphereLeft                       18.404    202.982  2771.035   0.091   0.9278    
+GyrusPrecuneus:HemisphereLeft                            -368.494    215.293  2771.032  -1.712   0.0871 .  
+GyrusSuperior Frontal Gyrus:HemisphereLeft                -59.074    199.325  2771.036  -0.296   0.7670    
+GyrusSuperior Parietal Lobule:HemisphereLeft              155.348    207.994  2771.034   0.747   0.4552    
+GyrusSuperior Temporal Gyrus:HemisphereLeft              -136.704    202.982  2771.035  -0.673   0.5007    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fit warnings:
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
